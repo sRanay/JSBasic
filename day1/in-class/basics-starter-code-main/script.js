@@ -73,5 +73,19 @@ var main = function (input) {
 
   // Start of More Comfortable Exercise
   
+  // Ice Machine
+  // Input: Number of Guest
+  // Output: Duration of the ice machine needs to run
+  /*
+  var iceProducePerHour = 5 * 454; // Converted to Grams
+  var iceNeeded = input * 2 * 4 * 1.5;
+  var duration = iceNeeded / iceProducePerHour;
+  var myOutputValue = `The hotel would need to run the ice machine for ${duration} hours to produce enough ice for ${input} guests.`
+  */
+
+  // Beer Order
+  // Input: Average Number of Customers per day
+  // Output: Amount of Half-barrel-size kegs the bar needs per quarter
+  
   return myOutputValue;
 };

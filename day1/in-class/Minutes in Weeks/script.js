@@ -3,6 +3,6 @@ var main = function (input) {
   // Input: Weeks
   // Output: Num of Minutes in N Weeks
   var numOfMinutes = input * 7 * 24 * 60;
-  var myOutputValue = `In ${input} weeks there are ${numOfMinutes}! Wow!`
+  var myOutputValue = `In ${input} weeks there are ${numOfMinutes}!`;
   return myOutputValue;
 };

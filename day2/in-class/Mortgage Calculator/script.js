@@ -3,7 +3,7 @@
 // Output: Total amount including principal, Interest amount, Monthly payment
 
 var totalAmountToRepay = function (loanPeriod, loanAmount) {
-  var total = loanPeriod * (1.03 ** loanPeriod);
+  var total = loanAmount * (1.03 ** loanPeriod);
   return total;
 }
 

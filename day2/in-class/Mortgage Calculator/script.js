@@ -5,7 +5,7 @@
 var totalAmountToRepay = function (loanPeriod, loanAmount) {
   var total = loanAmount * (1.03 ** loanPeriod);
   return total;
-}
+};
 
 var main = function (input) {
   var myOutputValue = "";

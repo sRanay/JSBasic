@@ -28,10 +28,13 @@ var main = function (input) {
   var randomDiceNumber1 = rollDice();
   var randomDiceNumber2 = rollDice();
   // The default output value is "you lose".
-  var myOutputValue = 'you lose';
-  // If the input matches both random dice numbers, output value is "you win".
-  if (randomDiceNumber1 == input && randomDiceNumber2 == input && randomDiceNumber1 != 1 && randomDiceNumber2 != 1) {
+  var myOutputValue = '';
+  if (randomDiceNumber1 + randomDiceNumber2 === 11) {
     myOutputValue = 'you win';
+  } else if (randomDiceNumber1 === input || randomDiceNumber2 === input) {
+    myOutputValue = 'you win';
+  } else {
+    myOutputValue = 'you lose';
   }
   return myOutputValue;
 };

@@ -37,24 +37,22 @@
       <input id="my-input" />
       <button id="my-button">Submit</button>
       <p>Output:</p>
-      <div id="output">
-        Let's Play! Please enter "scissors", "paper", or "stone".
-      </div>
+      <div id="output">Let's Play! Please enter your username.</div>
     </div>
     <!-- Import program logic -->
     <script src="script.js"></script>
     <!-- Define button click functionality -->
     <script>
-      var button = document.querySelector('#my-button');
-      button.addEventListener('click', function () {
+      var button = document.querySelector("#my-button");
+      button.addEventListener("click", function () {
         // Set result to input value
-        var input = document.querySelector('#my-input');
+        var input = document.querySelector("#my-input");
         var result = main(input.value);
         // Display result in output element
-        var output = document.querySelector('#output');
+        var output = document.querySelector("#output");
         output.innerHTML = result;
         // Reset input value
-        input.value = '';
+        input.value = "";
       });
     </script>
   </body>

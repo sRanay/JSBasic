@@ -1,3 +1,16 @@
+/*
+How many hours did you spend on this assignment?:
+24 hours
+What part of the assignment did you spend the most time on?:
+Changing of gamestate
+How comfortable did you feel with this assignment? (1-5):
+4
+Is there anything in this code that you feel pleased about?:
+Able to create 1st program in javascript
+What's one aspect of your code you would like specific, elaborate feedback on?:
+Gamestate changer
+*/
+
 // Global Variable
 var reversedMode = false;
 var normalMode = true;
@@ -44,7 +57,6 @@ var generateSPS = function () {
 // Input: scissors, paper or stone
 // Output: converting it into icons
 var convertToIcon = function (choice) {
-
   if (choice === "scissors") {
     return "✂️";
   } else if (choice === "paper") {

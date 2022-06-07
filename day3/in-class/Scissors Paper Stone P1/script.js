@@ -1,16 +1,3 @@
-/*
-How many hours did you spend on this assignment?:
-24 hours
-What part of the assignment did you spend the most time on?:
-Changing of gamestate
-How comfortable did you feel with this assignment? (1-5):
-4
-Is there anything in this code that you feel pleased about?:
-Able to create 1st program in javascript
-What's one aspect of your code you would like specific, elaborate feedback on?:
-Gamestate changer
-*/
-
 // Global Variable
 var reversedMode = false;
 var normalMode = true;
@@ -30,9 +17,9 @@ var checkUserInput = function (userInput) {
     userInput === "reversed" ||
     userInput === "normal"
   ) {
-    return true;
-  } else {
     return false;
+  } else {
+    return true;
   }
 };
 
@@ -111,7 +98,7 @@ var main = function (input) {
   // Converting the input into lowercase
   input = input.toLowerCase();
   // Checking for User input
-  if (!checkUserInput(input)) {
+  if (checkUserInput(input)) {
     return "Please enter a valid input (scissors, paper or stone)";
   }
   switch (input) {
